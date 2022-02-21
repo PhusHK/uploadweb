@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huỳnh Kim Phú</title>
+    <style>
+        #container {
+            margin: auto;
+            width: 1400px;
+            
+        }
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        nav  ul  li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            list-style: none;
+            text-decoration: none;
+            padding: 0px 30px;
+            font-size: 25px;
+            color: black;
+            line-height: 60px;
+        }
+
+        nav ul ul {
+            position: absolute;
+            display: none;
+        }
+
+        nav ul li:hover a{
+            background-color: rgb(209,219,229);
+            color: red;
+        }
+
+
+
+        nav ul li:hover ul {
+            display: block;
+            width: 159px;
+            list-style: none;
+            border-radius: 3px;
+            box-shadow: 0px 0px 1px gray;
+        }
+
+        nav ul li:hover ul li {
+            width: 100%;
+        }
+
+        nav ul li:hover ul li:hover a {
+            background-color: lightseagreen;
+        }
+
+        nav ul li:hover ul a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 5px 0 5px 0px;
+        }
+
+        header {
+            background-image: url(https://vn-live-01.slatic.net/shop/d09bc945cace5fe5bf5557a42227aef0.jpeg);
+            height: 250px;
+            background-size: 100% 100%;
+        }
+
+        nav {
+            margin-top: 5px;
+            background-color: lightseagreen;
+            height: 60px;
+        }
+        #container > main > article {
+            background-color: rgb(209,219,229);
+            min-height: 450px;
+            width:  65%;
+            float: right;
+            margin-top: 5px;
+
+        }
+
+        #container > main > article > div > .nhap > input{
+            width: 700px;
+            height: 50px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 4px;
+            outline:none;
+        }
+
+        #container > main > article > #nd {
+            text-align: center;
+        }
+
+        #container > main > aside > div > h1 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #container > main > aside > .lienhe {
+            font-size: 25px;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        aside {
+            background-color: rgb(209,219,229);
+            float: left;
+            min-height: 450px;
+            width: 34%;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: lightseagreen;
+            height: 100px;
+            clear: both;
+        }
+
+        footer > div > .box > a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 25px;
+            margin: 0px 10px 0px 10px;
+            color: white;
+        }
+
+        footer > div > .box {
+            float: left;
+            margin: 22px 0px 0px 65px;
+            padding: 0%;
+        
+        }
+
+        footer > div > .box > img {
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="" alt="">
+        </header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tintuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="sanpham.html">Sản phẩm</a>
+                        <ul>
+                            <li><a href="product.html">Điện thoại</a></li>
+                            <li><a href="">Laptop</a></li>
+                            <li><a href="">Đồng hồ</a></li>
+                            <li><a href="">Nước hoa</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn</a>
+                    </li>
+                    <li>
+                        <a href="lienhe.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Ảnh</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <aside>
+                <div>
+                    <h1>công ty trách nhiệm hữu hạn một thành viên</h1>
+                </div>
+                <div class="lienhe">
+                        <div>
+                            <img src="https://icons.iconarchive.com/icons/graphicloads/100-flat/24/phone-icon.png" alt="">
+                            TƯ VẤN
+                        </div>
+                    <p>Điện thoại: 0123456789</p>
+                </div>
+                <div class="lienhe">
+                        <div>
+                            <img src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/24/Email-icon.png" alt="">
+                            EMAIL
+                        </div>
+                    <p>phuhkps25439@fpt.edu.vn</p>
+                </div>
+            </aside>
+            <article>
+                <div id="nd">
+                    <form class="nhap">
+                        <input type="text" name="search" placeholder="Họ & tên">
+                    </form>
+    
+                    <form class="nhap">
+                        <input type="text" name="search" placeholder="Email">
+                    </form>
+    
+                    <form class="nhap">
+                        <input type="text" name="search" placeholder="Điện thoại"3>
+                    </form>
+    
+                    <form class="nhap">
+                        <input type="text" name="search" placeholder="Địa chỉ">
+                    </form>
+    
+                    <form class="nhap">
+                        <input type="text" name="search" placeholder="Nội dung">
+                    </form>
+                    <form  style="margin-top: 20px;">
+                        <button>GỬI</button>
+                    </form>
+                </div>
+
+            </article>
+        </main>
+        <footer>
+            <div>
+                <div class="box">
+                    <img src="https://icons.iconarchive.com/icons/google/noto-emoji-objects/24/62967-shield-icon.png" alt="">
+                    <a href="#">chính sách bảo mật</a>
+                </div>
+                <div class="box">
+                    <img src="https://icons.iconarchive.com/icons/saki/nuoveXT/24/Apps-package-icon.png" alt="">
+                    <a href="#">chính sách đổi trả</a>
+                </div>
+                <div class="box">
+                    <img src="https://icons.iconarchive.com/icons/visualpharm/finance/24/shopping-cart-icon.png" alt="">
+                    <a href="#">chính sách mua hàng</a>
+                </div>
+                <div class="box">
+                    <img src="https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/24/42560-motor-scooter-icon.png" alt="">
+                    <a href="#">chính sách giao hàng</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
