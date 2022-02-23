@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huỳnh Kim Phú</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #container {
+            margin: auto;
+            width: 1400px;
+            
+        }
+
+        #login {
+            height: 50px;
+            background-color: lightseagreen;
+        }
+
+        #login > a {
+            margin-top: 15px;
+            padding-right: 10px;
+            float: right;
+            text-decoration: underline;
+            font-size: 20px;
+            color: black;
+        }
+
+        #login > a:hover {
+            color: red;
+        }
+
+        header {
+            background-image: url(https://vn-live-01.slatic.net/shop/d09bc945cace5fe5bf5557a42227aef0.jpeg);
+            height: 250px;
+            background-size: 100% 100%;
+        }
+
+        nav {
+            margin-top: 5px;
+            background-color: lightseagreen;
+            height: 60px;
+            box-shadow: 5px 5px 5px -3px orangered;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        nav  ul  li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            list-style: none;
+            text-decoration: none;
+            padding: 0px 30px;
+            font-size: 25px;
+            color: black;
+            line-height: 60px;
+        }
+
+        nav ul ul {
+            position: absolute;
+            display: none;
+        }
+
+        nav ul li:hover a{
+            background-color: rgb(209,219,229);
+            color: red;
+        }
+
+
+
+        nav ul li:hover ul {
+            display: block;
+            width: 159px;
+            list-style: none;
+            border-radius: 3px;
+            box-shadow: 0px 0px 1px gray;
+        }
+
+        nav ul li:hover ul li {
+            width: 100%;
+        }
+
+        nav ul li:hover ul li:hover a {
+            background-color: lightseagreen;
+        }
+
+        nav ul li:hover ul a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 5px 0 5px 0px;
+        }
+
+        #container > main > article {
+            /* background-color: rgb(209,219,229); */
+            background-color: white;
+            min-height: 450px;
+            width:  75%;
+            float: left;
+            margin-top: 5px;
+
+        }
+
+        #tieude > h1 {
+            margin-left: 10px;
+        }
+
+        .anh > a > img {
+            height: 300px;
+            width: 330px;
+            margin-left: 14px;
+        }
+
+        .sp {
+            float: left;
+            margin-left: 90px;
+        }
+
+        .sp > a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .sp > a:hover {
+            color: lightseagreen;
+
+        }
+
+        .sp > p {
+            font-size: 20px;
+            color: red;
+            text-decoration: underline;
+        }
+
+        aside {
+            /* background-color: rgb(209,219,229); */
+            background-color: white;
+            float: right;
+            min-height: 450px;
+            width: 24%;
+            margin-top: 5px;
+        }
+
+        #container > main > aside ul li  {
+            list-style-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/16/Actions-go-next-view-icon.png);
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left: 50px;
+            border-bottom: 1px solid black;
+            padding: 10px 0px 10px 0px;
+            
+        }
+
+        #container > main > aside ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        #container > main > aside ul li a:hover {
+            color: red;
+        }
+
+        #container > main > aside ul {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        main > aside > form > input {
+            width: 130px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 4px;
+            outline:none;
+            margin-top: 5px;
+            margin-left: 5px;
+            height: 30px;
+
+            transition:0.6s ease-in-out;
+        } 
+
+        input:focus {
+            width: 330px;
+            transition:0.6s ease-in-out;
+        }
+
+        footer {
+            background-color: lightseagreen;
+            height: 100px;
+            clear: both;
+        }
+
+        footer > div > .box > a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 25px;
+            margin: 0px 10px 0px 10px;
+            color: white;
+        }
+
+        footer > div > .box {
+            float: left;
+            margin: 22px 0px 0px 65px;
+            padding: 0%;
+        
+        }
+
+        footer > div > .box > img {
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+
+        article {
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px -1px lightseagreen;
+        }
+
+        .mainvideo {
+            float: left;
+            width: 75%;
+        }
+
+        .extravideo{
+            float: right;
+            width: 24%;
+            height: 500px;
+        }
+
+        .subextra-video a > img {
+            height: 156px;
+            width: 100%;
+        }
+
+        .op {
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0" nonce="qDKE5dSS"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0" nonce="nkqJQM9n"></script>
+    <div id="container">
+        <div id="login">
+            <a href="dangky.html">Đăng Ký</a>
+            <a href="login.html">Đăng Nhập</a>
+        </div>
+        <header>
+            <img src="" alt="">
+        </header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="tintuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm</a>
+                        <ul>
+                            <li><a href="sanpham.html">Điện thoại</a></li>
+                            <li><a href="">Laptop</a></li>
+                            <li><a href="">Đồng hồ</a></li>
+                            <li><a href="">Nước hoa</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn</a>
+                    </li>
+                    <li>
+                        <a href="#">Về chúng tôi </a>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="gallery.html">Thư viện</a></li>
+                            <li><a href="media.html">Video</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article>
+                <div>
+                    <h1>
+                        VIDEO HAY
+                    </h1>
+                </div>
+                <hr>
+                <div class="op">
+                    <div class="mainvideo">
+                        <iframe name="videos" width="100%" height="475" src="https://www.youtube.com/embed/g3FdW7nCKQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="extravideo">
+                        <div class="subextra-video">
+                            <a href="./extra-video/video1.html" target="videos">
+                                <img src="./img/vd1.jpg" alt="">
+                            </a>
+                            <a href="./extra-video/video3.html" target="videos">
+                                <img src="./img/vd3.jpg" alt="">
+                            </a>
+                            <a href="./extra-video/video2.html" target="videos">
+                                <img src="./img/vd2.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="fb">
+                    <h1>
+                        BÀI VIẾT HAY
+                    </h1>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fweb5ngay%2Fposts%2F3095422034056086&show_text=true&width=500" width="100%" height="199" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <div class="fb-like" data-href="https://www.facebook.com/web5ngay" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>    
+                    <div class="fb-comments" data-href="https://www.facebook.com/web5ngay" data-width="" data-numposts="5"></div>
+                </div>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.201603769275!2d106.64236751472693!3d10.872265492256494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529f1faf02707%3A0x8423b904b20f9847!2zQ2FvIMSR4bqzbmcgRlBUIHBvbHl0ZWNobmlj!5e0!3m2!1svi!2s!4v1645607886432!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                </article>
+            <aside>
+                <form>
+                    <input type="text" name="search" placeholder="Nhập sản phẩm cần tìm...">
+                </form>
+                <ul>
+                    <li>
+                        <a href="#">Nhà Cửa</a>
+                    </li>
+                    <li>
+                        <a href="#">Nội Thất</a>
+                    </li>
+                    <li>
+                        <a href="#">Thiết Bị Số</a>
+                    </li>
+                    <li>
+                        <a href="#">Điện Tử</a>
+                    </li>
+                    <li>
+                        <a href="#">Điện Thoại</a>
+                    </li>
+                    <li>
+                        <a href="#">Gia Dụng</a>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <div>
+                <div class="box">
+                    <img src="https://icons.iconarchive.com/icons/google/noto-emoji-objects/24/62967-shield-icon.png" alt="">
+                    <a href="#">chính sách bảo mật</a>
+                </div>
+                <div class="box">
+                    <img src="./img/packaging (1).png" alt="">
+                    <a href="#">chính sách đổi trả</a>
+                </div>
+                <div class="box">
+                    <img src="./img/carts (1).png" alt="">
+                    <a href="#">chính sách mua hàng</a>
+                </div>
+                <div class="box">
+                    <img src="./img/truck (1).png" alt="">
+                    <a href="#">chính sách giao hàng</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

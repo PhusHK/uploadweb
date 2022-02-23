@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huỳnh Kim Phú</title>
+    <style>
+        header {
+            background-color: lightseagreen;
+            text-align: center;
+            color: white;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            padding: 10px 0px 10px 0px;
+            font-size:20px;
+        }
+        
+        #frmDangky {
+            width: 650px;
+            margin: auto;
+            border:2px solid lightseagreen;
+            border-radius: 10px 10px;
+            font-size: 22px;
+            box-shadow: 5px 5px 5px -1px lightseagreen;
+        }
+
+        #cb {
+            float: right;
+            width: 75%;
+            margin-bottom: 40px;
+        }
+
+        #st {
+            float: left;
+            width: 24%;
+        }
+
+        #ghichu {
+            clear: both;
+        }
+
+        #frmDangky label {
+            width: 160px;
+            display: inline-block;
+            color: black;
+        }
+
+        #frmDangky .txt {
+            width: 400px;
+            border: 1px solid darkorange;
+            padding: 10px;
+            box-shadow: 5px 5px 2px -4px darkorange;
+            border-radius: 5px;
+        }
+
+        #frmDangky button {
+            width: 150px;
+            height: 40px;
+            font-size: 1em;
+            border: 2px solid none;
+            border-radius: 50px;
+            background-color: lightseagreen;
+            color: white;
+            box-shadow: 5px 5px 0px -2px #F5EEAF;
+        }
+
+        #form-control {
+            padding-left: 15px;
+        }
+
+        #but {
+            padding-top: none;
+            padding-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="xuly.php" id="frmDangky" method="post" enctype="multipart/form-data">
+        <header><b>ĐĂNG KÝ THÀNH VIÊN</b></header>
+        <div id=form-control>
+            <p>
+                <label>Tên đăng nhập: </label>
+                <input type="text" class="txt" minlength="4" maxlength="20" placeholder="Nhập từ 4 đến 20 ký tự" name="un">
+            </p>
+            <p>
+                <label>Mật khẩu: </label>
+                <input type="password" class="txt" minlength="8" maxlength="20" placeholder="Nhập từ 8 đến 20 ký tự" name="pw">
+            </p>
+            <p>
+                <label>Giới tính</label>
+                <input type="radio" value="0" name="gioitinh" checked>Nam
+                <input type="radio" value="1" name="gioitinh">Nữ
+            </p>
+            <p>
+                <label>Số điện thoại: </label>
+                <input type="text" class="txt" placeholder="Nhập số điện thoại" name="pw">
+
+            </p>
+            <p>
+                <label> Hình ảnh </label>
+                <input type="file" class="txt" placeholder="Chọn hình ảnh của bạn" name="ha">
+            </p>
+            <p>
+                <label> Quốc tịch </label>
+                <select name="qt" class="txt">
+                    <option value="0">Chọn quốc tịch</option>
+                    <option value="1"> Việt Nam </option>
+                    <option value="2"> USA </option>
+                    <option value="4"> Khác </option>
+                </select>
+            </p>
+            <p>
+                <label id="st"> Sở thích </label>
+                <div id="cb">
+                    <label>
+                        <input type="checkbox">  Nhìn mưa rơi
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox">  Nghe chim hót
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox">  Ngắm mây bay
+                    </label>
+                </div>
+            </p>
+            <p id="ghichu">
+                <label> Ghi chú </label>
+                <textarea id="ta" class="txt" name="ta" rows="5"></textarea>
+            </p>
+            <label></label>
+            <div id="but" align="center">
+                <button id="btndk" type="submit">Đăng ký</button>
+                <button id="btnreset" type="reset">Làm lại</button>    
+            </div>
+        </div>
+    </form>
+</body>
+</html>
